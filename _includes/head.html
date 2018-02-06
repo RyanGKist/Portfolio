@@ -1,0 +1,54 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  {% feed_meta %}
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+    {% include google-analytics.html %}
+  {% endif %}
+
+  <script>
+    $( document ).ready(function() {
+    console.log( "ready!" );
+
+    $('.image-holder-1').click(function(){
+      $('.detail-content-1').slideDown()
+        $('.detail-content-2').slideUp() 
+        $('.detail-content-3').slideUp()
+        $('.detail-content-4').slideUp()
+        $('.detail-about-me').slideUp()
+    })
+    $('.image-holder-2').click(function(){
+      $('.detail-content-2').slideDown()
+        $('.detail-content-1').slideUp() 
+        $('.detail-content-3').slideUp()
+        $('.detail-content-4').slideUp()
+        $('.detail-about-me').slideUp() 
+    })
+    $('.image-holder-3').click(function(){
+      $('.detail-content-3').slideDown()
+        $('.detail-content-1').slideUp()
+        $('.detail-content-2').slideUp()
+        $('.detail-content-4').slideUp()
+        $('.detail-about-me').slideUp()
+    })
+    $('.image-holder-4').click(function(){
+      $('.detail-content-4').slideDown()
+        $('.detail-content-1').slideUp()
+        $('.detail-content-2').slideUp()
+        $('.detail-content-3').slideUp()
+        $('.detail-about-me').slideUp()
+    })
+});
+  </script>
+</head>
