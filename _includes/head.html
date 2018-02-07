@@ -9,7 +9,7 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous">
   </script>
-  <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   {% feed_meta %}
@@ -21,33 +21,40 @@
     $( document ).ready(function() {
     console.log( "ready!" );
 
-    $('.image-holder-1').click(function(){
-      $('.detail-content-1').slideDown()
-        $('.detail-content-2').slideUp() 
-        $('.detail-content-3').slideUp()
-        $('.detail-content-4').slideUp()
-        $('.detail-about-me').slideUp()
+    $('.image-holder-1').hover(function(){
+      $('.detail-content-1').fadeIn(1)
+        $('.detail-content-2').fadeOut(1) 
+        $('.detail-content-3').fadeOut(1)
+        $('.detail-content-4').fadeOut(1)
+        $('.detail-about-me').fadeOut(1)
     })
-    $('.image-holder-2').click(function(){
-      $('.detail-content-2').slideDown()
-        $('.detail-content-1').slideUp() 
-        $('.detail-content-3').slideUp()
-        $('.detail-content-4').slideUp()
-        $('.detail-about-me').slideUp() 
+    $('.image-holder-2').hover(function(){
+      $('.detail-content-2').fadeIn(1)
+        $('.detail-content-1').fadeOut(1) 
+        $('.detail-content-3').fadeOut(1)
+        $('.detail-content-4').fadeOut(1)
+        $('.detail-about-me').fadeOut(1) 
     })
-    $('.image-holder-3').click(function(){
-      $('.detail-content-3').slideDown()
-        $('.detail-content-1').slideUp()
-        $('.detail-content-2').slideUp()
-        $('.detail-content-4').slideUp()
-        $('.detail-about-me').slideUp()
+    $('.image-holder-3').hover(function(){
+      $('.detail-content-3').fadeIn(1)
+        $('.detail-content-1').fadeOut(1)
+        $('.detail-content-2').fadeOut(1)
+        $('.detail-content-4').fadeOut(1)
+        $('.detail-about-me').fadeOut(1)
     })
-    $('.image-holder-4').click(function(){
-      $('.detail-content-4').slideDown()
-        $('.detail-content-1').slideUp()
-        $('.detail-content-2').slideUp()
-        $('.detail-content-3').slideUp()
-        $('.detail-about-me').slideUp()
+    $('.image-holder-4').hover(function(){
+      $('.detail-content-4').fadeIn(1)
+        $('.detail-content-1').fadeOut(1)
+        $('.detail-content-2').fadeOut(1)
+        $('.detail-content-3').fadeOut(1)
+        $('.detail-about-me').fadeOut(1)
+    })
+    $('.page-content').on('mouseleave',function(){
+      $('.detail-about-me').fadeIn(1);
+      $('.detail-content-1').fadeOut(1)
+      $('.detail-content-2').fadeOut(1)
+      $('.detail-content-3').fadeOut(1)
+      $('.detail-content-4').fadeOut(1)
     })
 });
   </script>
