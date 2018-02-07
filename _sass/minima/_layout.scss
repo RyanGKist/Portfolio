@@ -5,6 +5,9 @@
   border-top: 1px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
+  -webkit-scrollbar { 
+    display: none; 
+  }
 
   // Positioning context for the mobile navigation icon
   position: relative;
@@ -126,6 +129,9 @@
   justify-content: center; 
   background-color: #E5E5E5;
   box-shadow:inset -5px 4px 20px 0px #999999,  0px -3px 21px 9px #09061b;
+  -webkit-scrollbar { 
+    display: none; 
+  }
 }
 
 .footer-heading {
