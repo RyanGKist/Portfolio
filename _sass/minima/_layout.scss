@@ -334,6 +334,7 @@
 
 .detail-title{
   border-bottom: 1px solid black;
+  @include relative-font-size(1.35);
 }
 .detail-content{
   text-align: justify
