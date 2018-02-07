@@ -208,6 +208,9 @@
   box-shadow:inset -5px 4px 20px 0px #999999,  0px -7px 21px 9px #09061b;
   margin-bottom: 8vh;
   overflow: scroll;
+  -webkit-scrollbar { 
+    display: none; 
+  }
 }
 
 .page-heading {
@@ -339,6 +342,4 @@
 .detail-content{
   text-align: justify
 }
-.detail-cont{
-  overflow: scroll;
-}
+
