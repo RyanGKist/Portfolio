@@ -291,6 +291,9 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  -webkit-scrollbar { 
+    display: none; 
+  }
 }
 .detail-content-1{
   text-align: justify; 
@@ -340,6 +343,9 @@
   @include relative-font-size(1.35);
 }
 .detail-content{
-  text-align: justify
+  text-align: justify;
+  -webkit-scrollbar { 
+    display: none; 
+  }
 }
 
