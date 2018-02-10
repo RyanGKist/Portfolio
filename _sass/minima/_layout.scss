@@ -336,15 +336,25 @@
   width: 2%;
   height: auto;
   border-radius: 50%;
+  @media only screen and (max-width: 500px) {
+    width: 5.5%
+}
 }
 .img-icon-git{
   width: 8%;
   height: auto;
   margin-right: -6px;
+  @media only screen and (max-width: 500px) {
+    width: 20%
+}
 }
 .img-icon-mail{
   width:2.5%;
   height: auto;
+  @media only screen and (max-width: 500px) {
+    width: 6.5%
+}
+  
 }
 .foot-container{ 
   justify-content: center;
