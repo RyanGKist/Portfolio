@@ -222,6 +222,9 @@
   -webkit-scrollbar { 
     display: none; 
   }
+  @media only screen and (max-width: 500px) {
+    font-size: 3vw;
+}
 }
 
 .page-heading {
