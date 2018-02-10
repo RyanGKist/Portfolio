@@ -173,6 +173,7 @@ pre {
   -webkit-scrollbar { 
     display: none; 
   }
+  
 
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
