@@ -326,7 +326,11 @@
 }
 .img-project{
   width:  8em;
-  height: 8em;
+  height: auto;
+  @media only screen and (max-width: 500px) {
+    width:  5em;
+    height: auto;
+}
 }
 .img-project-1{
   height:175px;
