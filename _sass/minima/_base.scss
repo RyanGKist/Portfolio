@@ -9,7 +9,6 @@ dl, dd, ol, ul, figure {
 }
 
 
-
 /**
  * Basic styling
  */
@@ -23,7 +22,6 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-  overflow-x: hidden;
 }
 
 
@@ -165,7 +163,7 @@ pre {
  */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 1));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -251,4 +249,14 @@ table {
 
 ul{
   list-style: none;
+  @media only screen and (max-width: 500px) {
+    margin: 0px;
+} 
+}
+
+iframe{
+  @media only screen and (max-width: 500px) {
+    width:100%;
+    height:auto;
+}
 }

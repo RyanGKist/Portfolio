@@ -20,40 +20,41 @@
     $( document ).ready(function() {
     console.log( "ready!" );
 
-    $('.image-holder-1').hover(function(){
-      $('.detail-content-1').fadeIn(1)
-        $('.detail-content-2').fadeOut(1) 
-        $('.detail-content-3').fadeOut(1)
-        $('.detail-content-4').fadeOut(1)
-        $('.detail-about-me').fadeOut(1)
+    $('.image-holder-1').click(function(){
+      $('.image-holder-1').addClass('opac');
+      $('.image-holder-2').removeClass('opac');
+      $('.image-holder-3').removeClass('opac');
+      $('.image-holder-4').removeClass('opac');
+      $('html, body').animate({
+      scrollTop: $(".shell-1").offset().top
+      }, 1000);
     })
-    $('.image-holder-2').hover(function(){
-      $('.detail-content-2').fadeIn(1)
-        $('.detail-content-1').fadeOut(1) 
-        $('.detail-content-3').fadeOut(1)
-        $('.detail-content-4').fadeOut(1)
-        $('.detail-about-me').fadeOut(1) 
+    $('.image-holder-2').click(function(){
+      $('.image-holder-2').addClass('opac');
+      $('.image-holder-1').removeClass('opac');
+      $('.image-holder-3').removeClass('opac');
+      $('.image-holder-4').removeClass('opac');
+      $('html, body').animate({
+      scrollTop: $(".shell-2").offset().top
+      }, 1000); 
     })
-    $('.image-holder-3').hover(function(){
-      $('.detail-content-3').fadeIn(1)
-        $('.detail-content-1').fadeOut(1)
-        $('.detail-content-2').fadeOut(1)
-        $('.detail-content-4').fadeOut(1)
-        $('.detail-about-me').fadeOut(1)
+    $('.image-holder-3').click(function(){
+      $('.image-holder-3').addClass('opac');
+      $('.image-holder-1').removeClass('opac');
+      $('.image-holder-2').removeClass('opac');
+      $('.image-holder-4').removeClass('opac');
+      $('html, body').animate({
+      scrollTop: $(".shell-3").offset().top
+      }, 1000);
     })
-    $('.image-holder-4').hover(function(){
-      $('.detail-content-4').fadeIn(1)
-        $('.detail-content-1').fadeOut(1)
-        $('.detail-content-2').fadeOut(1)
-        $('.detail-content-3').fadeOut(1)
-        $('.detail-about-me').fadeOut(1)
-    })
-    $('.page-content').on('mouseleave',function(){
-      $('.detail-about-me').fadeIn(1);
-      $('.detail-content-1').fadeOut(1)
-      $('.detail-content-2').fadeOut(1)
-      $('.detail-content-3').fadeOut(1)
-      $('.detail-content-4').fadeOut(1)
+    $('.image-holder-4').click(function(){
+      $('.image-holder-4').addClass('opac');
+      $('.image-holder-1').removeClass('opac');
+      $('.image-holder-2').removeClass('opac');
+      $('.image-holder-3').removeClass('opac');
+      $('html, body').animate({
+      scrollTop: $(".shell-4").offset().top
+      }, 1000);
     })
 });
   </script>
