@@ -8,6 +8,12 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 
 /**
  * Basic styling

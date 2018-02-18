@@ -20,6 +20,12 @@
     $( document ).ready(function() {
     console.log( "ready!" );
 
+    $('.back').click(function(){
+      $('html, body').animate({
+      scrollTop: $(".page-content").offset().top
+      }, 1000);
+    })
+
     $('.image-holder-1').click(function(){
       $('.image-holder-1').addClass('opac');
       $('.image-holder-2').removeClass('opac');

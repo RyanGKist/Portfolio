@@ -131,13 +131,11 @@
  * Site footer
  */
 .site-footer {
+  bottom: 0;
   padding: $spacing-unit 0;
   justify-content: center; 
   background-color: #E5E5E5;
-  box-shadow:inset -5px 4px 20px 0px #999999,  0px -3px 21px 9px #09061b;
-  -webkit-scrollbar { 
-    display: none; 
-  }
+  box-shadow:inset -5px 4px 20px 0px #999999,  0px -3px 21px 9px #09061b; 
 }
 
 .footer-heading {
